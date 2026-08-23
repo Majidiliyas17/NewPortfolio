@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          document.documentElement.dataset.theme =
+            localStorage.getItem("portfolio-theme") || "dark";
+        } catch (e) {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Majid Iliyas — Software Engineer and Fullstack AI Developer building scalable REST APIs, multi-tenant SaaS platforms, and AI-powered web applications with Node.js, TypeScript, React, Next.js, PostgreSQL, and Python FastAPI." />
+    <meta name="author" content="Majid Iliyas" />
+    <meta property="og:title" content="Majid Iliyas — Software Engineer | Fullstack AI Developer" />
+    <meta property="og:description" content="Fullstack Developer building scalable REST APIs, multi-tenant SaaS platforms, and AI engine architecture with Python FastAPI microservices." />
+    <meta property="og:type" content="website" />
+    <title>Majid Iliyas — Software Engineer | Fullstack AI Developer</title>
+    <link rel="icon" type="image/jpeg" href="assets/profile.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="aurora" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="noise"></div>
+    <div class="cursor-glow"></div>
+    <div class="progress-bar"><span id="progress"></span></div>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header class="nav" id="top">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#top">MI<span>.</span></a>
+        <nav class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#education">Education</a>
+          <a href="#resume">Résumé</a>
+        </nav>
+        <div class="nav-right">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">
+            <span class="icon-sun">&#9788;</span>
+            <span class="icon-moon">&#9789;</span>
+          </button>
+          <a class="nav-cta" href="#contact">Let's talk <span>&nearr;</span></a>
+          <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section id="home" class="hero wrap">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><i></i> Available for new opportunities</p>
+          <h1>Majid<br /><em>Iliyas</em></h1>
+          <p class="hero-role">Software Engineer — Fullstack AI Developer</p>
+          <p class="intro">
+            I build scalable REST APIs, multi-tenant SaaS platforms, and end-to-end web
+            applications with Node.js, TypeScript, React, Next.js, and PostgreSQL — now
+            engineering AI systems with Python FastAPI microservices, RAG pipelines, and
+            LLM orchestration.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#projects">Explore my work <span>&darr;</span></a>
+            <a class="text-link" href="assets/MajidIliyas_Resume_Cv.pdf" target="_blank" rel="noreferrer">Résumé <span>&nearr;</span></a>
+          </div>
+          <ul class="contact-chips">
+            <li><a href="tel:+917310086133">&#128222; +91 7310086133</a></li>
+            <li><a href="mailto:majidiliyas1717@gmail.com">&#9993; majidiliyas1717@gmail.com</a></li>
+            <li><span>&#128205; Lucknow, India</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-art reveal delay-1" aria-label="Portrait of Majid Iliyas">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="portrait-card">
+            <img src="assets/profile.jpg" alt="Majid Iliyas — Software Engineer" />
+            <div class="card-caption"><span>Software Engineer</span><b>Fullstack + AI</b></div>
+          </div>
+          <div class="float-chip chip-one">React <b>&#10022;</b></div>
+          <div class="float-chip chip-two">AI / RAG <b>&nearr;</b></div>
+          <div class="float-chip chip-three">Node.js <b>&#9679;</b></div>
+        </div>
+
+        <div class="scroll-note">SCROLL TO EXPLORE <span></span></div>
+      </section>
+
+      <!-- ============ MARQUEE ============ -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Node.js</span><i>&#10022;</i><span>TypeScript</span><i>&#10022;</i><span>React</span><i>&#10022;</i><span>Next.js</span><i>&#10022;</i><span>Python · FastAPI</span><i>&#10022;</i><span>RAG Pipelines</span><i>&#10022;</i><span>LangChain</span><i>&#10022;</i><span>PostgreSQL</span><i>&#10022;</i><span>Multi-Tenant SaaS</span><i>&#10022;</i><span>LLM Orchestration</span><i>&#10022;</i><span>Vector Databases</span><i>&#10022;</i><span>REST API Design</span><i>&#10022;</i>
+          <span>Node.js</span><i>&#10022;</i><span>TypeScript</span><i>&#10022;</i><span>React</span><i>&#10022;</i><span>Next.js</span><i>&#10022;</i><span>Python · FastAPI</span><i>&#10022;</i><span>RAG Pipelines</span><i>&#10022;</i><span>LangChain</span><i>&#10022;</i><span>PostgreSQL</span><i>&#10022;</i><span>Multi-Tenant SaaS</span><i>&#10022;</i><span>LLM Orchestration</span><i>&#10022;</i><span>Vector Databases</span><i>&#10022;</i><span>REST API Design</span><i>&#10022;</i>
+        </div>
+      </div>
+
+      <!-- ============ ABOUT ============ -->
+      <section id="about" class="about wrap section">
+        <div class="section-label reveal">01 / About Me</div>
+        <div class="about-grid">
+          <h2 class="reveal">Shipping production systems,<br />from <em>design to deployment.</em></h2>
+          <div class="about-copy reveal delay-1">
+            <p>
+              Fullstack Developer with hands-on experience building scalable REST APIs,
+              multi-tenant SaaS platforms, and end-to-end web applications using Node.js,
+              TypeScript, React, Next.js, and PostgreSQL. Strong foundation in Python and
+              comfortable working across FastAPI-style REST architectures, database design,
+              authentication systems, and third-party API integrations.
+            </p>
+            <p>
+              Actively building AI engine architecture using Python FastAPI microservices,
+              with working knowledge of RAG pipelines and LLM orchestration frameworks.
+              Comfortable owning both backend services and frontend interfaces, from design
+              through deployment, with a track record of independently shipping and
+              maintaining production systems.
+            </p>
+          </div>
+        </div>
+        <div class="stats-grid reveal delay-2">
+          <div class="stat-card"><b>2+</b><span>Years of professional experience at Levels Tech (US-based)</span></div>
+          <div class="stat-card"><b>7+</b><span>Production projects designed, built &amp; deployed end-to-end</span></div>
+          <div class="stat-card"><b>9.1</b><span>CGPA — B.Tech in Computer Science, Integral University</span></div>
+          <div class="stat-card"><b>3+</b><span>Industry certifications across AI, cloud &amp; cybersecurity</span></div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section id="skills" class="skills wrap section">
+        <div class="section-label reveal">02 / Skills</div>
+        <div class="skills-heading reveal">
+          <h2>A toolkit built for<br /><em>modern product teams.</em></h2>
+          <p>Technologies I use daily across backend engineering, frontend interfaces, AI systems, infrastructure, and computer science fundamentals.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <div class="skill-head"><span class="skill-icon">&#60;&#47;&#62;</span><h3>Frontend</h3></div>
+            <ul>
+              <li>React</li><li>Next.js</li><li>JavaScript</li><li>TypeScript</li><li>HTML / CSS</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal delay-1">
+            <div class="skill-head"><span class="skill-icon">{ }</span><h3>Backend</h3></div>
+            <ul>
+              <li>Node.js</li><li>Express.js</li><li>Python (FastAPI)</li><li>REST API Design</li><li>TypeORM</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal delay-2">
+            <div class="skill-head"><span class="skill-icon">&#9670;</span><h3>Databases</h3></div>
+            <ul>
+              <li>PostgreSQL</li><li>MongoDB</li><li>Redis (familiar)</li><li>PgAdmin</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal">
+            <div class="skill-head"><span class="skill-icon">&#9733;</span><h3>AI / ML</h3></div>
+            <ul>
+              <li>RAG (Retrieval-Augmented Generation)</li><li>LangChain</li><li>Vector Databases</li><li>AI Engine / Microservices Architecture</li><li>AI / LLM API Integration — ChatGPT, Claude, DeepSeek</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal delay-1">
+            <div class="skill-head"><span class="skill-icon">&#9881;</span><h3>DevOps &amp; Tools</h3></div>
+            <ul>
+              <li>Git &amp; GitHub</li><li>Docker (familiar)</li><li>Digital Ocean</li><li>Hostinger</li><li>Postman</li><li>JWT / RBAC Authentication</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal delay-2">
+            <div class="skill-head"><span class="skill-icon">&#9635;</span><h3>CS Fundamentals</h3></div>
+            <ul>
+              <li>Data Structures &amp; Algorithms</li><li>System Design Fundamentals</li><li>Database Schema Design</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section id="experience" class="experience wrap section">
+        <div class="section-label reveal">03 / Experience</div>
+        <div class="exp-heading reveal"><h2>Where I've<br /><em>worked &amp; grown.</em></h2></div>
+
+        <div class="timeline">
+          <article class="timeline-row reveal">
+            <div class="timeline-meta">
+              <span class="year">06/2025 – Present</span>
+              <span class="badge">Hybrid</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Software Developer</h3>
+              <p class="company">Levels Tech <b>· US-based</b></p>
+              <p class="context">
+                LevelsTech is a global software development company delivering IT solutions
+                for complex business challenges, with offices in Tucson, Arizona and
+                Lucknow, India.
+              </p>
+              <ul>
+                <li>Develop and maintain scalable backend APIs using Node.js and TypeScript for SaaS-based multi-tenant applications, with PostgreSQL and TypeORM for data modeling, entity relationships, and query optimization.</li>
+                <li>Design and implement RESTful services, database integrations, and business logic to support core platform functionality — patterns directly transferable to FastAPI/Flask-based API design.</li>
+                <li>Collaborate with cross-functional teams to integrate backend services with frontend systems, ensuring smooth end-to-end application performance.</li>
+                <li>Maintain secure, reliable, and efficient backend architecture through clean, well-documented, and testable code.</li>
+              </ul>
+              <div class="tag-row"><span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span><span>TypeORM</span><span>REST APIs</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-row reveal">
+            <div class="timeline-meta">
+              <span class="year">12/2024 – 06/2025</span>
+              <span class="badge">Hybrid</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Junior Software Developer</h3>
+              <p class="company">Levels Tech <b>· US-based</b></p>
+              <ul>
+                <li>Started as a Junior Software Developer, building foundational backend features and getting up to speed on the company's multi-tenant SaaS architecture using Node.js, TypeScript, and PostgreSQL.</li>
+                <li>Contributed to REST API development and database schema work under guidance, before transitioning to a full-time Software Developer role after demonstrating strong ownership and delivery.</li>
+              </ul>
+              <div class="tag-row"><span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span><span>SaaS Architecture</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section id="projects" class="project-list wrap section">
+        <div class="section-label reveal">04 / Projects</div>
+        <div class="project-list-heading reveal">
+          <h2>Built for <em>real-world</em><br />problems.</h2>
+          <p>
+            Production platforms spanning SaaS HRMS, AI-powered lead automation, property
+            marketplaces, media streaming, and secure storage — every card links straight
+            to the live project.
+          </p>
+        </div>
+
+        <div class="project-details">
+          <article class="detail-card reveal">
+            <div class="card-top">
+              <span>01 / SAAS PLATFORM</span>
+              <a class="visit-link" href="https://hellohrms.com" target="_blank" rel="noreferrer" aria-label="Visit HelloHRMS">Visit site &nearr;</a>
+            </div>
+            <h3>HelloHRMS</h3>
+            <p class="card-tagline">hellohrms.com &nbsp;|&nbsp; levels.hellohrms.com</p>
+            <p>Scalable SaaS-based HRMS platform for employee management, leave tracking, attendance, and payroll.</p>
+            <ul>
+              <li>Developed and maintained backend APIs and business logic for employee management, leave management, attendance, and payroll modules.</li>
+              <li>Built out a full Procurement module — covering purchase requests, vendor tracking, and approval workflows — integrated into the existing SaaS architecture.</li>
+              <li>Implemented secure authentication, role-based access control (RBAC), and data isolation across a single platform instance.</li>
+              <li>Optimized backend performance and database interactions to maintain reliability at scale.</li>
+            </ul>
+            <div class="tech-row"><span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span><span>TypeORM</span><span>RBAC</span></div>
+          </article>
+
+          <article class="detail-card reveal delay-1">
+            <div class="card-top">
+              <span>02 / AI AUTOMATION</span>
+              <a class="visit-link" href="https://aileadms.com" target="_blank" rel="noreferrer" aria-label="Visit AiLeadMs">Visit site &nearr;</a>
+            </div>
+            <h3>AiLeadMs</h3>
+            <p class="card-tagline">aileadms.com</p>
+            <p>AI-powered, multi-tenant Lead Management System automating lead generation, management, and social media marketing workflows.</p>
+            <ul>
+              <li>Worked as a fullstack developer, building backend APIs/services alongside the React-based frontend UI to manage lead data, campaign workflows, and automation processes.</li>
+              <li>Implemented secure token-based authentication and third-party API integrations (YouTube, Instagram, Facebook) for automated content posting and campaign management, including token refresh and error-handling logic.</li>
+              <li>Designed lead tracking and management modules for efficient storage, retrieval, and processing — directly applicable experience for AI/LLM API integration work.</li>
+              <li>Handled deployment for the project.</li>
+            </ul>
+            <div class="tech-row"><span>AI</span><span>Multi-Tenant</span><span>React</span><span>Node.js</span><span>Third-party APIs</span></div>
+          </article>
+
+          <article class="detail-card reveal">
+            <div class="card-top">
+              <span>03 / PROPTECH STARTUP</span>
+              <a class="visit-link" href="https://itwaproperties.com" target="_blank" rel="noreferrer" aria-label="Visit Itwa Properties">Visit site &nearr;</a>
+              <a class="visit-link alt" href="https://aspslai.com" target="_blank" rel="noreferrer" aria-label="Visit ASPSLAI">aspslai.com &nearr;</a>
+            </div>
+            <h3>Itwa Properties</h3>
+            <p class="card-tagline">itwaproperties.com &nbsp;|&nbsp; aspslai.com</p>
+            <p>
+              Personal startup and flagship platform under ASPSLAI (Area-Specific Properties
+              &amp; Services Listings) — a future AI-based, area-specific digital ecosystem
+              vision. Built end-to-end and independently deployed to production.
+            </p>
+            <ul>
+              <li>Built the complete application full-stack — backend REST APIs and business logic (Node.js, TypeScript, PostgreSQL) and frontend (Next.js) for property listings, users, and service data.</li>
+              <li>Designing and developing the platform's AI engine architecture as Python FastAPI microservices, laying the groundwork for RAG-based, area-specific AI search and recommendations.</li>
+              <li>Designed and managed the database schema and API integrations to support efficient data handling and platform scalability.</li>
+              <li>Independently handled deployment and server management, ensuring reliable operation in a live production environment.</li>
+            </ul>
+            <div class="tech-row"><span>Next.js</span><span>Node.js</span><span>TypeScript</span><span>Python · FastAPI</span><span>RAG</span></div>
+          </article>
+
+          <article class="detail-card reveal delay-1">
+            <div class="card-top">
+              <span>04 / MEDIA STREAMING</span>
+              <a class="visit-link" href="https://safarmusic.aspslai.com" target="_blank" rel="noreferrer" aria-label="Visit Safar Music">Visit site &nearr;</a>
+            </div>
+            <h3>Safar Music</h3>
+            <p class="card-tagline">safarmusic.aspslai.com</p>
+            <p>Music streaming platform built with Next.js, using YouTube embedding to power playback.</p>
+            <ul>
+              <li>Built the frontend and playback experience using Next.js, integrating YouTube embed APIs for streaming tracks.</li>
+              <li>Designed the UI/UX for browsing and playing music, focused on a smooth, ad-free listening experience.</li>
+            </ul>
+            <div class="tech-row"><span>Next.js</span><span>YouTube Embed API</span><span>UI/UX</span></div>
+          </article>
+
+          <article class="detail-card reveal">
+            <div class="card-top">
+              <span>05 / SECURITY</span>
+              <a class="visit-link" href="https://securefileassignment.netlify.app" target="_blank" rel="noreferrer" aria-label="Visit Secure File Storage System">Visit site &nearr;</a>
+            </div>
+            <h3>Secure File Storage System</h3>
+            <p class="card-tagline">securefileassignment.netlify.app</p>
+            <p>Web application for securely uploading, storing, and managing files.</p>
+            <ul>
+              <li>Built a secure file storage system covering upload, storage, and retrieval workflows for user files.</li>
+              <li>Implemented deployment and hosting to keep the application live and accessible.</li>
+            </ul>
+            <div class="tech-row"><span>File Security</span><span>Upload / Retrieval</span><span>Deployment</span></div>
+          </article>
+
+          <article class="detail-card reveal delay-1">
+            <div class="card-top">
+              <span>06 / OPERATIONS BACKEND</span>
+              <a class="visit-link" href="https://reception.trebta.in" target="_blank" rel="noreferrer" aria-label="Visit Reception Management System">Visit site &nearr;</a>
+            </div>
+            <h3>Reception Management System</h3>
+            <p class="card-tagline">reception.trebta.in</p>
+            <p>
+              Backend for a reception/front-desk management system used to handle visitor
+              check-ins, appointment scheduling, and staff notifications.
+            </p>
+            <ul>
+              <li>Built REST APIs using Node.js and PostgreSQL (pgpool) to manage visitor records, appointments, and real-time front-desk workflows.</li>
+              <li>Designed relational database schema for visitors, appointments, and staff records, optimizing queries for concurrent access via pgpool connection pooling.</li>
+              <li>Implemented clean API structure and error handling suitable for adaptation to Python frameworks such as FastAPI or Flask.</li>
+              <li>Handled deployment for the project.</li>
+            </ul>
+            <div class="tech-row"><span>Node.js</span><span>PostgreSQL</span><span>pgpool</span><span>REST APIs</span></div>
+          </article>
+
+          <article class="detail-card reveal wide-card">
+            <div class="card-top">
+              <span>07 / CLIENT WEBSITE</span>
+              <a class="visit-link" href="https://up55fastfoodcafe.com" target="_blank" rel="noreferrer" aria-label="Visit UP55 Fast Food Cafe">Visit site &nearr;</a>
+            </div>
+            <h3>UP55 Fast Food Cafe</h3>
+            <p class="card-tagline">up55fastfoodcafe.com</p>
+            <p>Business website for a fast food cafe &amp; dhaba client, built and independently managed end-to-end.</p>
+            <ul>
+              <li>Designed and developed the complete website using HTML, CSS, and JavaScript for a live client.</li>
+              <li>Independently manage ongoing content updates and site maintenance for the client.</li>
+              <li>Handle deployment and hosting, ensuring the site stays live and reliable in production.</li>
+            </ul>
+            <div class="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Hosting</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ WORK GALLERY ============ -->
+      <section id="gallery" class="work-gallery wrap section">
+        <div class="section-label reveal">05 / Work Gallery</div>
+        <div class="gallery-heading reveal">
+          <h2>Inside my <em>workspace.</em></h2>
+          <p>
+            Real snapshots from my daily workflow — API testing in Postman, database
+            design in pgAdmin, AI engine architecture, and production code across
+            HRMS, lead automation, and client platforms.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="shot reveal">
+            <button class="shot-frame" type="button" aria-label="View screenshot: REST API testing in Postman">
+              <img src="assets/Screenshot (899).png" alt="Postman workspace testing HRMLIVE REST API endpoints with a 200 OK JSON response" loading="lazy" />
+              <span class="shot-num">01</span>
+              <span class="shot-zoom">&#8599;</span>
+            </button>
+            <figcaption><b>REST API Testing</b><span>Postman · HRMS endpoints &amp; auth</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal delay-1">
+            <button class="shot-frame" type="button" aria-label="View screenshot: PostgreSQL debugging in pgAdmin">
+              <img src="assets/Screenshot (902).png" alt="pgAdmin 4 showing SQL insert statements and schema error debugging on the HRMS database" loading="lazy" />
+              <span class="shot-num">02</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>Database Debugging</b><span>pgAdmin · PostgreSQL schema fixes</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal delay-2">
+            <button class="shot-frame" type="button" aria-label="View screenshot: seeded departments table in pgAdmin">
+              <img src="assets/Screenshot (903).png" alt="pgAdmin 4 Departments table populated with HR, IT, Finance and Manager rows" loading="lazy" />
+              <span class="shot-num">03</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>Seeded Production Data</b><span>pgAdmin · Departments table live rows</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal">
+            <button class="shot-frame" type="button" aria-label="View screenshot: AI engine hexagonal architecture in Python">
+              <img src="assets/Screenshot (1217).png" alt="VS Code ip-ai-engine project with FastAPI ports and adapters folder structure" loading="lazy" />
+              <span class="shot-num">04</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>AI Engine Architecture</b><span>Python · FastAPI · Hexagonal pattern</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal delay-1">
+            <button class="shot-frame" type="button" aria-label="View screenshot: payroll engine business logic">
+              <img src="assets/Screenshot (1218).png" alt="VS Code TypeScript PayrollEngineRunBusiness service processing payroll runs in the HRM API" loading="lazy" />
+              <span class="shot-num">05</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>Payroll Engine</b><span>TypeScript · Payroll run processing</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal delay-2">
+            <button class="shot-frame" type="button" aria-label="View screenshot: Instagram and Facebook Graph API integration">
+              <img src="assets/Screenshot (1219).png" alt="VS Code diff of Instagram media container creation using Facebook Graph API" loading="lazy" />
+              <span class="shot-num">06</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>Social Media Integrations</b><span>Instagram · Facebook · YouTube APIs</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal">
+            <button class="shot-frame" type="button" aria-label="View screenshot: React master layout dashboard">
+              <img src="assets/Screenshot (1220).png" alt="VS Code MasterLayout.tsx React component with sidebar overlay and responsive layout logic" loading="lazy" />
+              <span class="shot-num">07</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>React Dashboard UI</b><span>MasterLayout · Sidebar state management</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal delay-1">
+            <button class="shot-frame" type="button" aria-label="View screenshot: visitor system R2 storage mapper">
+              <img src="assets/Screenshot (1221).png" alt="VS Code VisitorMapper generating presigned Cloudflare R2 image URLs" loading="lazy" />
+              <span class="shot-num">08</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>Visitor System Backend</b><span>R2 Storage · Presigned URL mapping</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal delay-2">
+            <button class="shot-frame" type="button" aria-label="View screenshot: LRU memory cache service">
+              <img src="assets/Screenshot (1222).png" alt="VS Code MemoryCacheService with TTL handling and cache hit-rate statistics" loading="lazy" />
+              <span class="shot-num">09</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>Cache Layer</b><span>LRU service · TTL &amp; hit-rate stats</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal">
+            <button class="shot-frame" type="button" aria-label="View screenshot: semantic search query contracts">
+              <img src="assets/Screenshot (1223).png" alt="VS Code Pydantic SearchQuery model powering the semantic search pipeline" loading="lazy" />
+              <span class="shot-num">10</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>Semantic Search Pipeline</b><span>Pydantic models · Query contracts</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal delay-1">
+            <button class="shot-frame" type="button" aria-label="View screenshot: Next.js property platform homepage module">
+              <img src="assets/Screenshot (1224).png" alt="VS Code IP-UI Home.tsx Next.js page importing listing services and shared components" loading="lazy" />
+              <span class="shot-num">11</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>Property Platform Frontend</b><span>Next.js · App router modules</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal delay-2">
+            <button class="shot-frame" type="button" aria-label="View screenshot: FastAPI domain entities">
+              <img src="assets/Screenshot (1225).png" alt="VS code domain entities layer of the ip-ai-engine FastAPI project" loading="lazy" />
+              <span class="shot-num">12</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>Domain-Driven Design</b><span>Entities layer · Clean architecture</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal">
+            <button class="shot-frame" type="button" aria-label="View screenshot: Safar Music SEO metadata setup">
+              <img src="assets/Screenshot (1226).png" alt="VS Code Next.js root layout with metadata configuration for Safar Music" loading="lazy" />
+              <span class="shot-num">13</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>Music Streaming App</b><span>Next.js · SEO metadata setup</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal delay-1">
+            <button class="shot-frame" type="button" aria-label="View screenshot: Secure Files custom 404 page">
+              <img src="assets/Screenshot (1227).png" alt="VS Code not-found.tsx custom 404 page built with Tailwind for SecureFiles" loading="lazy" />
+              <span class="shot-num">14</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>Secure File Platform</b><span>Next.js · Custom 404 experience</span></figcaption>
+          </figure>
+
+          <figure class="shot reveal delay-2">
+            <button class="shot-frame" type="button" aria-label="View screenshot: environment validation with Zod">
+              <img src="assets/Screenshot (1228).png" alt="VS Code env config validated with Zod schemas including JWT secret rules" loading="lazy" />
+              <span class="shot-num">15</span>
+              <span class="shot-zoom">&#8981;</span>
+            </button>
+            <figcaption><b>Config Validation</b><span>Zod schemas · Env safety checks</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============ EDUCATION & CERTIFICATIONS ============ -->
+      <section id="education" class="education wrap section">
+        <div class="section-label reveal">06 / Education &amp; Certifications</div>
+        <div class="edu-cert-grid">
+          <article class="edu-card reveal">
+            <span class="mini-label">EDUCATION</span>
+            <h3>B.Tech in Computer Science</h3>
+            <p class="edu-score">9.1 CGPA</p>
+            <p class="edu-inst">Integral University, Lucknow, UP</p>
+            <span class="edu-year">08/2021 – 05/2025</span>
+          </article>
+          <article class="cert-card reveal delay-1">
+            <span class="mini-label">CERTIFICATIONS</span>
+            <ul class="cert-list">
+              <li>
+                <b>Microsoft Azure AI Essentials</b>
+                <span>Microsoft &amp; LinkedIn Learning — June 2025</span>
+              </li>
+              <li>
+                <b>Introduction to Technology Apprenticeship Job Simulation</b>
+                <span>Accenture via Forage — July 2025</span>
+              </li>
+              <li>
+                <b>Career Essentials in Cybersecurity</b>
+                <span>Microsoft &amp; LinkedIn Learning — August 2024</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ RESUME ============ -->
+      <section id="resume" class="resume wrap section">
+        <div class="section-label reveal">07 / Résumé</div>
+        <div class="resume-heading reveal">
+          <h2>Prefer to skim?<br /><em>Read the résumé.</em></h2>
+          <div class="resume-actions">
+            <a class="button" href="assets/MajidIliyas_Resume_Cv.pdf" target="_blank" rel="noreferrer">View full résumé <span>&nearr;</span></a>
+            <a class="text-link" href="assets/MajidIliyas_Resume_Cv.pdf" download>Download PDF &darr;</a>
+          </div>
+        </div>
+        <div class="resume-frame reveal delay-1">
+          <div class="frame-bar"><i></i><i></i><i></i><span>MajidIliyas_Resume_Cv.pdf</span></div>
+          <iframe src="assets/MajidIliyas_Resume_Cv.pdf#toolbar=0&amp;view=FitH" title="Majid Iliyas — Résumé preview">
+            Your browser does not support embedded PDF previews.
+            <a href="assets/MajidIliyas_Resume_Cv.pdf">Open the résumé instead.</a>
+          </iframe>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" class="contact section">
+        <div class="contact-orb"></div>
+        <div class="wrap reveal">
+          <p class="section-label">08 / Get In Touch</p>
+          <h2>Have an idea?<br /><em>Let's make it real.</em></h2>
+          <a class="contact-mail" href="mailto:majidiliyas1717@gmail.com">majidiliyas1717@gmail.com <span>&nearr;</span></a>
+          <div class="contact-grid">
+            <a class="contact-tile" href="tel:+917310086133"><b>Phone</b><span>+91 7310086133</span></a>
+            <a class="contact-tile" href="https://www.linkedin.com/in/majid-iliyas-673612247" target="_blank" rel="noreferrer"><b>LinkedIn</b><span>majid-iliyas-673612247</span></a>
+            <a class="contact-tile" href="https://github.com/Majidiliyas17" target="_blank" rel="noreferrer"><b>GitHub</b><span>@Majidiliyas17</span></a>
+            <div class="contact-tile static"><b>Location</b><span>Lucknow, India</span></div>
+          </div>
+          <div class="contact-bottom">
+            <span>&copy; 2026 MAJID ILIYAS</span>
+            <div>
+              <a href="https://www.linkedin.com/in/majid-iliyas-673612247" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://github.com/Majidiliyas17" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="#top">Back to top &uarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ LIGHTBOX ============ -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Screenshot viewer">
+      <button class="lightbox-btn lightbox-close" id="lightbox-close" type="button" aria-label="Close viewer">&times;</button>
+      <button class="lightbox-btn lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous screenshot">&#8592;</button>
+      <figure class="lightbox-body">
+        <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+        <figcaption class="lightbox-caption"><span id="lightbox-num"></span><b id="lightbox-title"></b><em id="lightbox-sub"></em></figcaption>
+      </figure>
+      <button class="lightbox-btn lightbox-next" id="lightbox-next" type="button" aria-label="Next screenshot">&#8594;</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
