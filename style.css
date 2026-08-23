@@ -158,6 +158,24 @@ em {
   html[data-theme="light"] .aurora i { animation: none !important; }
 }
 
+/* ---------- Mobile / touch devices: freeze decorative motion (aurora + skills marquee stay ON) ---------- */
+@media (max-width: 768px), (pointer: coarse) {
+  .orbit-one, .orbit-two,
+  .float-chip,
+  .scroll-note span {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* ---------- Rainbow aurora on mobile: lighter blur so phones stay smooth ---------- */
+@media (max-width: 768px), (pointer: coarse) {
+  @keyframes hue-shift {
+    from { filter: blur(46px) saturate(1.3) hue-rotate(0deg); }
+    to   { filter: blur(46px) saturate(1.3) hue-rotate(360deg); }
+  }
+}
+
 /* ---------- Light mode component overrides ---------- */
 html[data-theme="light"] .nav { background: rgba(240, 242, 252, 0.8); }
 html[data-theme="light"] .marquee { background: rgba(255, 255, 255, 0.55); }
@@ -260,6 +278,7 @@ html[data-theme="light"] .icon-moon { opacity: 1; }
    ============================================================ */
 .hero {
   min-height: calc(100vh - 84px);
+  min-height: calc(100svh - 84px);
   display: grid; grid-template-columns: 1.15fr 0.85fr; align-items: center;
   gap: 40px; padding-block: 56px 96px; position: relative;
 }
@@ -589,6 +608,33 @@ html[data-theme="light"] .icon-moon { opacity: 1; }
   border: 0; background: #ffffff;
 }
 
+/* ---------- Mobile PDF fallback (mobile browsers can't embed PDFs) ---------- */
+.resume-mobile-note { display: none; }
+.resume-frame.pdf-no-embed iframe { display: none; }
+.resume-frame.pdf-no-embed .resume-mobile-note {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 8px; text-align: center; padding: 64px 24px;
+}
+.resume-mobile-note .rmn-icon {
+  width: 64px; height: 64px; display: grid; place-items: center;
+  font-size: 28px; margin-bottom: 8px; border-radius: 50%;
+  color: var(--mint);
+  background: rgba(164, 255, 202, 0.07); border: 1px solid rgba(164, 255, 202, 0.25);
+}
+.resume-mobile-note b {
+  font-family: var(--font-display); font-size: 19px; letter-spacing: -0.01em;
+}
+.resume-mobile-note .rmn-sub {
+  font-size: 13px; color: var(--muted); max-width: 320px; line-height: 1.65;
+}
+.resume-mobile-note .rmn-actions {
+  display: flex; align-items: center; justify-content: center;
+  gap: 22px; flex-wrap: wrap; margin-top: 14px;
+}
+html[data-theme="light"] .resume-mobile-note .rmn-icon {
+  color: #0c7a50; background: rgba(14, 157, 104, 0.08); border-color: rgba(14, 157, 104, 0.3);
+}
+
 /* ============================================================
    CONTACT
    ============================================================ */
@@ -799,7 +845,6 @@ body.lightbox-open { overflow: hidden; }
   .gallery-heading { flex-direction: column; align-items: flex-start; gap: 14px; }
   .resume-frame iframe { height: 72vh; }
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
-  .chip-three { display: none; }
   .scroll-note { display: none; }
 
   .lightbox { flex-direction: column; padding: 16px; gap: 10px; }
@@ -850,6 +895,7 @@ body.lightbox-open { overflow: hidden; }
   .portrait-card { width: min(200px, 64%); }
   .card-caption { padding: 8px 12px; bottom: -18px; }
   .float-chip { padding: 7px 11px; font-size: 10px; }
+  .chip-three { left: 0; }
 
   .marquee { padding-block: 10px; }
   .marquee-track span { font-size: 14px; }
@@ -931,6 +977,8 @@ body.lightbox-open { overflow: hidden; }
   .resume-heading { margin-bottom: 20px; }
   .resume-actions { gap: 12px; }
   .resume-frame iframe { height: 52vh; }
+  .resume-frame.pdf-no-embed .resume-mobile-note { padding: 44px 16px; }
+  .resume-mobile-note b { font-size: 16px; }
   .frame-bar { padding: 9px 12px; }
   .frame-bar span { font-size: 9.5px; }
 

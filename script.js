@@ -93,6 +93,19 @@ if (themeToggle) {
   syncLabel();
 }
 
+/* ---------- Mobile: swap embedded PDF for open/download actions ---------- */
+const resumeFrame = document.getElementById('resume-frame');
+const resumeNote = document.getElementById('resume-mobile-note');
+if (resumeFrame && resumeNote) {
+  const canEmbedPdf =
+    !window.matchMedia('(pointer: coarse)').matches &&
+    !/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+  if (!canEmbedPdf) {
+    resumeFrame.classList.add('pdf-no-embed');
+    resumeNote.hidden = false;
+  }
+}
+
 /* ---------- Work gallery lightbox ---------- */
 const shots = [...document.querySelectorAll('.gallery-grid .shot')];
 const lightbox = document.getElementById('lightbox');
